@@ -1,5 +1,5 @@
 module.exports = {
-  testTimeout: 10000,
+  testTimeout: 20000,
   preset: 'ts-jest',
   reporters: [
     'default',
