@@ -1,3 +1,3 @@
-export function delay(time = 10000) {
-    return new Promise(resolve => setTimeout(resolve, time));
+export function delay(time: number = 10000) {
+  return new Promise((resolve) => setTimeout(resolve, time));
 }

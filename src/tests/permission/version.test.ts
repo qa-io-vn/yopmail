@@ -1,14 +1,14 @@
-import {getVersion} from "../../utils/permission/version";
-import {delay} from "../../utils/delay/delays";
+import {getVersion} from '../../utils/permission/version';
+import {delay} from '../../utils/delay/delays';
 
 describe('version', () => {
-    beforeEach( async ()=>{
-        await delay();
-    })
+  beforeEach( async ()=>{
+    await delay();
+  });
 
-    it('Should able to get yopmail version', async () => {
-        const version = await getVersion();
+  it('Should able to get yopmail version', async () => {
+    const version = await getVersion();
 
-        expect(version).not.toBeUndefined();
-    })
-})
+    expect(version).not.toBeUndefined();
+  });
+});
