@@ -5,7 +5,7 @@ import {delay} from "../../utils/delay/delays";
 
 describe('mail details', () => {
   beforeEach( async ()=>{
-    await delay(5000);
+    await delay();
   })
 
   it('Should able to get yopmail inbox details', async () => {

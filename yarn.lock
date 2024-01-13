@@ -3794,7 +3794,7 @@ yargs@^16.2.0:
     yargs-parser "^20.2.2"
 
 "yopmail-helper@file:":
-  version "1.0.0"
+  version "1.0.1"
   resolved "file:"
   dependencies:
     node-html-parser "^6.1.12"
