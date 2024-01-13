@@ -1,9 +1,9 @@
 {
-  "name": "yopmail-helper",
+  "name": "yopmail",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/amalsgit/Supertest-Jest-TypeScript.git",
-  "author": "amal jayaraj <amaljayaraj07@gmail.com>",
+  "description": "yopmail helper. It will help you receive the mail content.",
+  "repository": "https://github.com/qa-io-vn/yopmail",
+  "author": "tuan <tuanpm94@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.4.0",
