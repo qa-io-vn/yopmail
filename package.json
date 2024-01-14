@@ -1,6 +1,7 @@
 {
   "name": "yopmail-helper",
   "version": "1.0.5",
+  "keywords": ["javascript", "tools", "yopmail", "temporal mail", "mail semail"],
   "description": "yopmail helper. It will help you receive the mail content.",
   "repository": "https://github.com/qa-io-vn/yopmail",
   "author": "tuan <tuanpm94@gmail.com>",
