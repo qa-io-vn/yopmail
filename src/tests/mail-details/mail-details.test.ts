@@ -9,13 +9,13 @@ describe('mail details', () => {
   });
 
   it('Should able to get yopmail inbox details', async () => {
-    const inbox = await getInbox('admin01');
-    const mailDetails = await getMailDetails(inbox[0].id, 'admin01');
+    const inbox = await getInbox('admin02');
+    const mailDetails = await getMailDetails(inbox[0].id, 'admin02');
 
     expect(mailDetails).not.toBeUndefined();
   });
   it('Should able to get link of inbox details', async () => {
-    const links = await getLinkOfFirstMail('admin01');
+    const links = await getLinkOfFirstMail('admin996');
 
     expect(links).not.toBeUndefined();
   });

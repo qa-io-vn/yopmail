@@ -1,12 +1,15 @@
 import axios from 'axios';
-
+export let cookies: string[] | undefined = [];
 export async function getCookie() {
   const response = await axios({
     method: 'get',
     url: 'https://yopmail.com',
   });
-  if (response.headers['set-cookie']==undefined) return [];
-  return response.headers['set-cookie'];
+  // @ts-ignore
+  if (cookies != []) {
+    cookies = response.headers['set-cookie'];
+  }
+  return cookies;
 }
 
 export async function createGetMailCookies() {
