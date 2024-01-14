@@ -21,6 +21,7 @@ async function getInboxHtml( mailAddress: string) {
 }
 
 export async function getInbox(mailAddress: string) {
+  mailAddress=(mailAddress.split('@')[0]||'').toLowerCase()||mailAddress;
   const htmlPage = await getInboxHtml(mailAddress);
   const data = parse(htmlPage);
   const mails = data.querySelectorAll('.m');
