@@ -1,6 +1,6 @@
 {
   "name": "yopmail-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "yopmail helper. It will help you receive the mail content.",
   "repository": "https://github.com/qa-io-vn/yopmail",
   "author": "tuan <tuanpm94@gmail.com>",
