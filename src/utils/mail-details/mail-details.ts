@@ -10,7 +10,7 @@ export async function getMailDetailsHtml(id: string, mailAddress: string) {
       Host: 'yopmail.com',
     },
     method: 'get',
-    url: getMailDetailsUrl(id),
+    url: getMailDetailsUrl(id, mailAddress),
   });
 
   return response.data;

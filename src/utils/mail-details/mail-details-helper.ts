@@ -1,14 +1,22 @@
 import {getInbox} from '../inbox/inbox';
-import {getMailDetails} from './mail-details';
+import {getMailDetailsHtml} from './mail-details';
+import {parse} from 'node-html-parser';
 
 export async function getLinkOfFirstMail(mailAddress: string) {
   const result: any[] = [];
   const mails = await getInbox(mailAddress);
   const idOfFirstMail = mails[0].id;
-  const mailDetail = await getMailDetails(idOfFirstMail, mailAddress);
-  const res1 = mailDetail.body.match(/https?:\/\/\S+/);
-  const res2 = mailDetail.body.match(/http?:\/\/\S+/);
-  result.push(res1, res2);
+  const mailDetail = await getMailDetailsHtml(idOfFirstMail, mailAddress);
+  const selectorAll = parse(mailDetail).querySelectorAll('a');
+
+  selectorAll.forEach(
+      (item) => {
+        const href = item.getAttribute('href');
+        if (href!=null) {
+          result.push(href);
+        }
+      },
+  );
 
   return result;
 }

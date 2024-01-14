@@ -1,5 +1,5 @@
-export function getMailDetailsUrl(id: string) {
-  return `https://yopmail.com/mail?b=admin01&id=m${id}`;
+export function getMailDetailsUrl(id: string, mailAddress: string) {
+  return `https://yopmail.com/mail?b=${mailAddress}&id=m${id}`;
 }
 
 
