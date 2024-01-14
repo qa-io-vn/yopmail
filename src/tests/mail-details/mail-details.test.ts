@@ -15,8 +15,8 @@ describe('mail details', () => {
     expect(mailDetails).not.toBeUndefined();
   });
   it('Should able to get link of inbox details', async () => {
-    const link = await getLinkOfFirstMail('admin01');
+    const links = await getLinkOfFirstMail('admin01');
 
-    expect(link).not.toBeUndefined();
+    expect(links).not.toBeUndefined();
   });
 });
