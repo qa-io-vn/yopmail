@@ -1,6 +1,7 @@
-name: CI
+name: Schedule Health Check
 on:
-  push
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   build:
