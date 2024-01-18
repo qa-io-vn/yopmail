@@ -30,6 +30,7 @@
     "lint": "eslint . --ext .ts"
   },
   "dependencies": {
-    "node-html-parser": "^6.1.12"
+    "node-html-parser": "^6.1.12",
+    "yopmail-helper": "^1.0.6"
   }
 }

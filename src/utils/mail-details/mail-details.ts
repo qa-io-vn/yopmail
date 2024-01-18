@@ -27,5 +27,6 @@ export async function getMailDetails(id: string, mailAddress: string) {
 
   return details;
 }
-
+module.exports={getMailDetailsHtml: getMailDetailsHtml};
+module.exports={getMailDetails: getMailDetails};
 
