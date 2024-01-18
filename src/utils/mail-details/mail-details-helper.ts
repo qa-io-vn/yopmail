@@ -22,4 +22,3 @@ export async function getLinkOfFirstMail(mailAddress: string) {
   return result;
 }
 
-module.exports={getLinkOfFirstMail: getLinkOfFirstMail};

@@ -45,4 +45,3 @@ export async function getInbox(mailAddress: string) {
   return mailsInfo;
 }
 
-module.exports={getInbox: getInbox};

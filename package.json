@@ -8,6 +8,7 @@
     "temporal mail",
     "mail semail"
   ],
+  "main": "src/index.ts",
   "description": "yopmail helper. It will help you receive the mail content.",
   "repository": "https://github.com/qa-io-vn/yopmail",
   "author": "tuan <tuanpm94@gmail.com>",
