@@ -8,6 +8,11 @@
     "temporal mail",
     "mail semail"
   ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "description": "yopmail helper. It will help you receive the mail content.",
   "repository": "https://github.com/qa-io-vn/yopmail",
   "author": "tuan <tuanpm94@gmail.com>",
@@ -23,11 +28,12 @@
     "jest": "^27.4.7",
     "jest-html-reporters": "3.0.2",
     "ts-jest": "^27.1.2",
-    "typescript": "^4.5.4"
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "test": "jest --runInBand",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "build": "tsc"
   },
   "dependencies": {
     "node-html-parser": "^6.1.12"
