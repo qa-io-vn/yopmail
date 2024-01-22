@@ -12,19 +12,27 @@ yarn add yopmail-helper
 
 ``` js
 //Declare module
-const easyYOPmail = require('yopmail-helper');
+import { inbox, linkOfFirstMail, mailDetails, mailDetailsHtml } from 'yopmail-helper';
 ```
 
 #### ✉️ *get inbox of a mail address*
 ``` js
-const inbox = await getInbox('admin01');
+    const mails = await inbox('admin01');
 ```
 
 #### 🗃️ *Read details of an email*
 ``` js
-const mailDetails = await getMailDetails(inbox[0].id, 'admin01');
+    const mails = await inbox('admin01');
+    const mailDetailsInfo = await mailDetails(mails[0].mailId,'admin01');
 ```
+
+#### 🗃️ *Read details of an email in HTML*
+``` js
+    const mails = await inbox('admin01');
+    const mailDetailsHtmlInfo = await mailDetailsHtml(mails[0].mailId,'admin01');
+```
+
 #### 📑 *Read link of an email*
 ``` js
-const links = await getLinkOfFirstMail('admin01');
+    const link = await linkOfFirstMail('admin01');
 ```
