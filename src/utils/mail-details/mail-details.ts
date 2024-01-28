@@ -28,4 +28,3 @@ export async function getMailDetails(id: string, mailAddress: string) {
   return details;
 }
 
-

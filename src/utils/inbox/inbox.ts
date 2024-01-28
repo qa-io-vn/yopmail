@@ -44,3 +44,4 @@ export async function getInbox(mailAddress: string) {
 
   return mailsInfo;
 }
+
